@@ -18,6 +18,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Screenshot
 
-![Screenshot](./images/screenshot.jpg)
+![Screenshot](./images/screenshot.png)
 
-[Live Website](#######)
+[Live Website](https://shena9y.github.io/Testimonials-Grid-Section/)
