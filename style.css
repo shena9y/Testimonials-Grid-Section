@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: unset;
+  padding: unset;
+  box-sizing: border-box;
+}
+:root {
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: var(--Grey-100);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials {
+  padding: 60px 150px;
+  display: grid;
+  grid-template-columns: 70% 20%;
+  column-gap: 2%;
+  width: 100%;
+}
+@media (max-width: 1221px) {
+  body {
+    height: normal;
+  }
+  .testimonials {
+    grid-template-columns: 100%;
+    padding: 30px;
+    height: 100%;
+  }
+  .testimonials .col .row {
+    column-gap: 2%;
+    row-gap: 3%;
+  }
+
+  .testimonials .col1 {
+    flex-direction: column;
+    display: flex;
+    column-gap: 3%;
+    height: 60%;
+  }
+  .testimonials .col2 {
+    height: 100% !important;
+  }
+  .testimonials .col1 .row {
+    flex-direction: column;
+    height: 100% !important;
+  }
+  .testimonials .col .row .box {
+    width: 100%;
+  }
+  .testimonials .col .box {
+    width: 100%;
+  }
+  .testimonials .daniel .quotation {
+    display: none;
+  }
+}
+.testimonials .box {
+  box-shadow: 8px 25px 30px #00000034;
+}
+
+.testimonials .col {
+  width: 100%;
+}
+.testimonials .col .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 3%;
+  height: 48%;
+  margin: 20px 0;
+}
+
+.testimonials .col .box {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .col .box .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.testimonials .col .box .title img {
+  border-radius: 50%;
+  border: 2px solid var(--Grey-200);
+  width: 32px;
+}
+.testimonials .col .box .title .profile {
+  margin-left: 10px;
+}
+.testimonials .col .box .title .profile .name {
+  color: var(--Grey-100);
+  font-weight: 600;
+  font-size: 15px;
+}
+.testimonials .col .box .title .profile .job {
+  color: var(--Grey-200);
+  font-weight: 400;
+}
+.testimonials .col .box .headding {
+  color: var(--White);
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-right: 40px;
+}
+.testimonials .col .box .desc {
+  color: var(--Grey-200);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.testimonials .daniel {
+  background-color: var(--Purple-500);
+  width: 70%;
+  padding: 35px !important;
+  position: relative;
+}
+.testimonials .daniel .headding {
+  z-index: 1;
+}
+.testimonials .daniel .quotation {
+  position: absolute;
+  right: 65px;
+  top: 0;
+  width: 115px;
+}
+.testimonials .col .row .box {
+  height: 100%;
+}
+.testimonials .col .box {
+  height: 100%;
+}
+.testimonials .jonathan {
+  background-color: var(--Grey-500);
+  width: 30%;
+  padding: 35px !important;
+}
+.testimonials .kira {
+  background-color: var(--White);
+  height: 100%;
+  margin-top: 15px;
+  padding: 35px !important;
+}
+
+.testimonials .kira .name {
+  color: var(--Grey-500) !important;
+}
+.testimonials .kira .job {
+  color: var(--Grey-400) !important;
+}
+.testimonials .kira .headding {
+  color: var(--Grey-500) !important;
+  margin-top: 0px !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  margin-bottom: 35px !important;
+  line-height: 1.4;
+}
+.testimonials .kira .desc {
+  color: var(--Grey-500) !important;
+}
+.testimonials .jeanette {
+  background-color: var(--White);
+  width: 32%;
+  padding: 35px !important;
+}
+.testimonials .jeanette .profile .name {
+  color: var(--Grey-500) !important;
+}
+.testimonials .jeanette .profile .job {
+  color: var(--Grey-400) !important;
+}
+.testimonials .jeanette .headding {
+  color: var(--Grey-400) !important;
+  font-weight: 900 !important;
+}
+.testimonials .jeanette .desc {
+  color: var(--Grey-500) !important;
+  font-weight: 600 !important;
+}
+.testimonials .patrick {
+  background-color: var(--Dark-blue);
+  width: 68%;
+  padding: 35px !important;
+}
+.testimonials .patrick .title img {
+  border-color: var(--Purple-500) !important;
+}
+.testimonials .patrick .headding {
+  color: var(--Grey-200) !important;
+}
+.testimonials .patrick .desc {
+  color: var(--Grey-100) !important;
+}
