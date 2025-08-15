@@ -5,8 +5,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Add solution URL here](######)
-- Live Site URL: [Add live site URL here](########)
+- [Solution URL:](https://github.com/shena9y/Testimonials-Grid-Section)
+- [Live Site URL:](https://shena9y.github.io/Testimonials-Grid-Section/)
 
 
 ### Built with
